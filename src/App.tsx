@@ -67,6 +67,25 @@ function kgtolb(weight:number|string):number {
 const value:any=kgtolb(22)
 console.log("weight",value)
 
+
+//type intersection
+
+type dragable={
+  drag:()=>void
+}
+
+type resizeable={
+  resize:()=>void
+}
+
+type UIwidget=dragable|resizeable
+
+let textBox:UIwidget={
+  drag:()=>{},
+  resize:()=>{}
+  
+}
+
   return (
     <>
       <div>
