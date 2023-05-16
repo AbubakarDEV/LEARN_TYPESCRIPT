@@ -22,6 +22,7 @@ console.log("mysize",mySize)
 
 
 //function
+// function calculateTax(price:number,tax?:number):number{
 function calculateTax(price:number,tax=300):number{
   if (tax>300) {
     return price
@@ -32,8 +33,23 @@ function calculateTax(price:number,tax=300):number{
   }
 }
 
-
 calculateTax(4000)
+
+
+
+// objects
+let employee:{
+  readonly id:number,
+  name:string,
+  retire:(date:Date)=>void
+}
+={
+  id:1,
+  name:"Moash",
+  retire:(date:Date)=>{
+    console.log(date)
+  }
+}
 
 
   return (
