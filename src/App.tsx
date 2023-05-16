@@ -38,19 +38,20 @@ calculateTax(4000)
 
 
 // objects
-let employee:{
+
+type Employee={
   readonly id:number,
   name:string,
   retire:(date:Date)=>void
 }
-={
+
+let employee:Employee={
   id:1,
   name:"Moash",
   retire:(date:Date)=>{
     console.log(date)
   }
 }
-
 
   return (
     <>
