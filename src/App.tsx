@@ -86,6 +86,12 @@ let textBox:UIwidget={
   
 }
 
+// Literals
+type Qualtity=50|100
+
+let quantity:Qualtity=100;
+
+
   return (
     <>
       <div>
